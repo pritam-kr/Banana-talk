@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
+    background-color: #f7bb0613;
 }
 #input-text{
     width: 40vw;
@@ -14,6 +14,8 @@ body{
     color: rgba(0, 0, 0, 0.342);
     padding: 10px;
     outline: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
 }
 
 #output-text{
@@ -22,7 +24,8 @@ body{
     overflow-y: hidden;
     display: block;
     padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.404);
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
     
 }
 
@@ -30,14 +33,22 @@ body{
    display: grid;
    grid-template-columns: 1fr 1fr;
    margin: 0 4%;
+   height: 80vh;
+}
+#main .one {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 #main h1{
     font-family: -apple-system,  'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
 }
 #btn{
-    margin: 10px 0;
+    margin: 15px 0 10px 0;
     padding: 10px 35px;
     background-color: #F2C94C;
     outline: 0;
@@ -45,12 +56,13 @@ body{
     transition: 0.3s;
     cursor: pointer;
     font-size: large;
+    border-radius: 5px;
 }
 #btn:hover{
     background-color: #f7ba06;
 }
 .minion-img{
-    width: 40vw;
+    width: 60%;
     text-align: center;
 }
 .container{
@@ -62,22 +74,30 @@ body{
     margin-bottom: 3rem;
     
 }
-nav, footer{
-   
+nav{
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     padding: 20px 0;
-    background-color: #F2C94C;
-
+    background-color: #f7ba06;
 }
 
-
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
 @media (max-width: 668px){
     #main{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         justify-content: center;text-align: center;
+        height: 100vh;
      }
      .minion-img{
         width: 40vw;
