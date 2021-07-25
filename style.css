@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: #f7bb0613;
@@ -41,7 +42,6 @@ body{
     align-items: flex-start;
 }
 #main h1{
-    font-family: -apple-system,  'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -75,7 +75,6 @@ body{
     
 }
 nav{
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     padding: 20px 0;
     background-color: #f7ba06;
