@@ -1,114 +1,113 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: #f7bb0613;
+body {
+  background-color: #f7bb0613;
 }
-#input-text{
-    width: 40vw;
-    height: 110px;
-    overflow-y: hidden;
-    display: block;
-    color: rgba(0, 0, 0, 0.342);
-    padding: 10px;
-    outline: 0;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.247);
-}
-
-#output-text{
-    width: 40vw;
-    height: 110px;
-    overflow-y: hidden;
-    display: block;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.247);
-    border-radius: 10px;
-    background-color: #fff;
-    
+#input-text {
+  width: 40vw;
+  height: 110px;
+  overflow-y: hidden;
+  display: block;
+  color: rgba(0, 0, 0, 0.342);
+  padding: 10px;
+  outline: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.247);
 }
 
-#main{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   margin: 0 4%;
-   height: auto;
+#output-text {
+  width: 40vw;
+  height: 110px;
+  overflow-y: hidden;
+  display: block;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 4%;
+  height: auto;
 }
 #main .one {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
-#main h1{
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    text-transform: capitalize;
+#main h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
 }
-#btn{
-    margin: 15px 0 10px 0;
-    padding: 10px 35px;
-    background-color: #F2C94C;
-    outline: 0;
-    border: 0;
-    transition: 0.3s;
-    cursor: pointer;
-    font-size: large;
-    border-radius: 5px;
+#btn {
+  margin: 15px 0 10px 0;
+  padding: 10px 35px;
+  background-color: #f2c94c;
+  outline: 0;
+  border: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: large;
+  border-radius: 5px;
 }
-#btn:hover{
-    background-color: #f7ba06;
+#btn:hover {
+  background-color: #f7ba06;
 }
-.minion-img{
-    width: 60%;
-    text-align: center;
+.minion-img {
+  width: 60%;
+  text-align: center;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-nav{
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f7ba06;
+nav {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f7ba06;
 }
 
-footer{
-    display: flex;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+}
+footer ul li a {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.815);
+}
+@media (max-width: 668px) {
+  #main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     justify-content: center;
-    align-items: center;
-}
-footer ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin: 10px;
-}
-footer ul li a{
-    font-size: 1.3rem;
-    color:rgba(0, 0, 0, 0.815);
-}
-@media (max-width: 668px){
-    #main{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        justify-content: center;text-align: center;
-        height: auto;
-     }
-     .minion-img{
-        width: 40vw;
-        
-    }
-    #input-text, #output-text{
-        width: 100%;
-        text-align: left;
-    }
+    text-align: center;
+    height: auto;
+  }
+  .minion-img {
+    width: 40vw;
+  }
+  #input-text,
+  #output-text {
+    width: 100%;
+    text-align: left;
+  }
 }
